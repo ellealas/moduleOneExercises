@@ -1,0 +1,2 @@
+Installation on Windows(Ubuntu) :
+Navigate to https://git-scm.com/download/win and install git-scm

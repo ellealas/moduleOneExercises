@@ -1,0 +1,63 @@
+/* CSS – Exercise
+
+Let’s create a CSS file, named styles.css, and put it in the
+same folder where we created index.html before.
+Our styles.css looks something like this (see right)
+
+Inside the index.html <head></head> tags we add a <link />
+to import CSS.
+Play around with the styles, especially with the width and
+paddings. There are hundreds of attributes you can modify. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    }
+    body {
+    font-family: sans-serif;
+    }
+    header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    }
+    nav {
+    float: left;
+    background-color: gold;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+    }
+    article {
+    background-color: whitesmoke;
+    float: left;
+    width: 70%;
+    padding: 20px;
+    }
+    aside {
+    clear: both;
+    }
+    footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 0.9em;
+    }
+
+
+/* CSS – Conclusion
+
+Let’s look at our page now. Different
+right? It is not spectacular, but it is a big
+improvement. Making things look pretty
+will come from
+- Learning design principles
+- Experience
+- Research (Try to look for inspiration
+on Pinterest)
+
+Next, we will introduce JavaScript and we
+will use it to make some changes to our
+page. */

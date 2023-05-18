@@ -1,0 +1,28 @@
+Git – branch source control
+
+
+Create a new branch called feat1 
+
+use the command 
+    git branch feat1 
+    or 
+    via VSCode - click the ‘main’ branch in the bottom left corner:
+
+
+
+In your branch, do the add and commit routine again, like you did in
+the previous one.
+
+Now you have created another point in time. 
+
+Let’s assume you have
+finished your feature, and you are ready to put it back into main.
+Switch into the main branch, and then run the command 
+    git merge feat1
+this will merge the code together. 
+
+
+Congratulations, you have
+completed your first feature branch.
+Remember, this is still just local, you now push the main back into
+the remote, so you can share it with your team.

@@ -1,0 +1,34 @@
+<!-- JavaScript – Change the
+document elements
+
+In this example, we demonstrate how we can go and
+manipulate CSS to change how things look and feel. For
+example we could make a link change colour after it is
+clicked, or make an image zoom in while the user is
+hoovering on it with the mouse. JS is extremely
+versatile.
+In this example, we also meet the concept of id. So far,
+we only used generic elements, but elements can have
+an id, so we can recognise them, and change only the
+ones we are interested in.
+In this case, we want to change the colour of the
+element which has an id of “demo”. The function you
+see goes through the document searching for an
+element of id demo and when it finds it, it changes the
+style colour to red. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+this demo will change the text colour to red
+. -->
+<h1>JavaScript Change style Demo</h1>
+<p id="demo">JavaScript can change the style
+of an HTML element.</p>
+<script>
+document.getElementById("demo").style.color
+= "red";
+</script>
+</body>
+</html>

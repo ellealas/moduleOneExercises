@@ -1,0 +1,35 @@
+<!-- HTML - Forms
+
+The HTML form is another important primitive, but this
+will require that you understand more complex
+concepts, such as internet methods (HTTP methods) to
+fully understand and appreciate. For now, you can take
+for granted the following.
+- The Form takes the data within it and stores it into a
+network package.
+- Upon clicking the submit button, it will send the
+data to the url described in the action attribute.
+This functionality has evolved over time, but it is still as
+used today as when it was created in the 90s. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>HTML Forms</h2>
+<!--
+
+If you click the "Submit" button, the form-
+data will be sent to a page called "/action_pag
+
+e". -->
+<form action="/action_page">
+<label for="firstName">First name:</label><br>
+<input type="text" id="firstName" name="firstN
+ame" value="Joel"><br>
+<label for="lastName">Last name:</label><br>
+<input type="text" id="lastName" name="lastNam
+e" value="Doe"><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

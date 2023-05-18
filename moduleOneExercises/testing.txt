@@ -1,0 +1,187 @@
+Testing
+
+• Testing as Validation
+• Types of testing
+• Unit Testing
+• Integration Testing
+• Test first programming
+
+
+What is testing?
+
+Testing is an example of a more general process called validation. The purpose of
+validation is to uncover problems in a program and thereby increase your
+confidence in the program’s correctness. Validation includes:
+
+• Formal Reasoning
+• Code Review
+• Testing
+
+
+Formal Reasoning
+Formal reasoning about a program, is usually called verification.
+Verification constructs a formal proof that a program is correct.
+Verification is tedious to do by hand, and automated tool support for
+verification is still an active area of research. Nevertheless, small, crucial
+pieces of a program may be formally verified, such as the scheduler in an
+operating system, or the bytecode interpreter in a virtual machine, or the
+filesystem in an operating system.
+
+Code Reviews
+Having somebody else carefully read your code, and reason informally
+about it, can be a good way to uncover bugs. It’s much like having
+somebody else proofread an essay you have written. We’ll talk more
+about code review in the next reading.
+
+Important factors for a good code review
+1. Consistency
+2. Simplicity
+3. Design patterns
+4. Code level implications
+5. Quality of test and Documentation
+
+
+Software Testing
+
+Software testing is an organisational process within software development in which
+business-critical software is verified for correctness, quality, and performance.
+Software testing is used to ensure that expected business systems and product
+features behave correctly as expected.
+
+Software testing may either be a manual or an automated process.
+• Manual software testing is led by a team or individual who will manually
+operate a software product and ensure it behaves as expected.
+• Automated software testing is composed of many different tools which
+have varying capabilities, ranging from isolated code correctness checks to
+simulating a full human-driven manual testing experience.
+
+Software Testing
+
+• There are several fundamental levels
+within software testing, each examining
+the software functionality from a
+unique vantage point within the
+development process. Let’s take a look
+at each type of testing in turn and
+examine its practical use.
+• We go from closest to the functionality
+(unit testing) to closer to the user
+(exploratory testing)
+
+
+
+
+Unit Testing
+
+Unit testing is the practice of
+instrumenting input and output
+correctness checks for individual
+units of code. The measurement
+unit, in this case, is standalone
+code functions or methods.
+
+Take the example of
+the function
+
+sum(a, b){
+    return a+b
+}
+
+We can say with
+confidence that this is
+one complete unit.
+
+
+Unit Testing
+During unit testing, production code
+functions are executed in a test
+environment with simulated input.
+The output of the function is then
+compared against expected output
+for that input. If the output matches
+the expected, the test passes. If not,
+it is a failure. Unit tests are a great
+way to validate derived data
+functions.
+
+Imagine the previous
+function, the basic test
+would be
+
+If(sum(2,4)!=6{
+    throw error
+})
+
+Testing is about what
+goes bad, not what
+goes right.
+
+
+
+Integration Testing
+When a software test case covers more than one unit, it is
+considered an integration test. When developing a software test
+case, the lines between unit tests can quickly evolve into
+integration tests.
+Oftentimes a unit test may be developed that operates against a
+third party code dependency. The dependency itself will not need
+to be tested, and the integration to it will be mocked or faked.
+
+Functional Testing
+Test cases that simulate a full user-level experience are
+called functional tests or end-to-end tests. End-to-end
+tests use tools that simulate real human user behavior.
+Common steps in an end-to-end test:
+Click this button
+Read this text
+Submit this form
+
+Because of the full experience execution context, end-
+to-end tests verify correctness across all the layers of a
+software stack.
+
+Test first programming
+Test early and often. Don’t leave testing until the end, when you have
+a big pile of unvalidated code. Leaving testing until the end only
+makes debugging longer and more painful, because bugs may be
+anywhere in your code. It’s far more pleasant to test your code as
+you develop it.
+In test-first-programming, you write tests before you even write any
+code. The development of a single function proceeds in this order:
+• Write a specification for the function.
+• Write tests that exercise the specification.
+• Write the actual code. Once your code passes the tests you
+wrote, you’re done.
+
+Unit Testing
+The specification describes the input and
+output behavior of the function. It gives
+the types of the parameters and any
+additional constraints on them (e.g. sqrt’s
+parameter must be nonnegative). It also
+gives the type of the return value and
+how the return value relates to the
+inputs. In code, the specification consists
+of the method signature and the
+comment above it that describes what it
+does. We’ll have much more to say about
+specifications a few classes from now.
+
+Specification example
+//this function returns the sum //of two numbers
+function sum(a,b){
+}
+Create the Test
+If(sum(2,4)!=6){error}
+Write the Code
+function sum(a,b){
+return a+b
+}
+Writing tests first is a good way to
+understand the specification. The
+specification can be buggy, too —
+incorrect, incomplete, ambiguous, missing
+corner cases. Trying to write tests can
+uncover these problems early, before
+you’ve wasted time writing an
+implementation of a buggy spec.

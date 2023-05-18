@@ -1,0 +1,16 @@
+Git – cloning the repo
+The first time we make a local copy of the repo, we call the action a clone, as we are
+cloning the remote into the local.
+Open a terminal and use the command:
+git clone urloftheremoterepo
+And this will make a perfect local copy.
+You can also use VSCode for this: use the shortcut Ctrl-Shift-P, then type ‘git’ to find
+the Git: Clone command:
+
+Git is the window to the soul of every
+developer. If you apply for a job, you can
+expect people to look up your git repository.
+
+Click Git: Clone then paste in the link for your new repository. VSCode will ask where to
+store your remote repo on your local computer, then ask if you want to open a new
+window - choose this option.

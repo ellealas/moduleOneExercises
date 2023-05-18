@@ -1,0 +1,51 @@
+Managing Code
+
+Source Control
+
+Keeping track of your work and collaborating is the most important
+part of being a good developer.
+We are going to learn GIT to achieve this. Git, and in our case,
+GitHub, are applications used to coordinate work among
+developers. It is by far the most common way to work in a team on
+software development.
+
+GIT and Source Control
+
+• Download git
+• Create a new repo
+• Add a file and commit
+• Push changes
+• Clone a repo
+• Branching : checking out to different branch
+• Update and merge
+• Miscellaneous Commands : log and tag
+• Gitk -- built in git GUI
+
+Basics of Git
+
+Understanding git is not the simplest thing in the
+world, you need to understand the concept of
+local, remote, staging and many more terms.
+Git allows us to track our work through time. We
+start from a master (main) timeline and instead
+of developing on it, we branch into our own
+timeline. This creates a parallel version of the
+code. We write our code here, and along this
+timeline, we commit our work continuously.
+When we are confident we have done our work,
+we make a final commit and then merge it back
+into the master timeline. We then push the code
+so that it becomes available for everyone else on
+the team.
+
+Basics of Git
+
+By doing this, we can ensure that our work will
+affect other people. Developers commit their
+work frequently. You can always go back to a
+previous moment in time, resetting your code to
+that specific moment.
+
+There is a fair amount to work through if this is
+your first time using Git. Don’t rush it, every step
+is needed.

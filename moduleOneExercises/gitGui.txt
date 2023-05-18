@@ -1,0 +1,14 @@
+Git – GUI ?
+
+You can do things using the help of GUI based
+applications, like the GitHub app, or Source tree,
+or the many available in the market, but knowing
+how to do things through the console line is vital,
+as many times, you will not have access to a GUI.
+
+Final step, explore the commands git log and git
+tag. They are very useful even at the early stages,
+especially when things go wrong.
+Try GitK, it is a graphical model, an alternative to
+git log. You can run by executing the command
+gitk -all

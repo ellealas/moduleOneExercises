@@ -1,0 +1,42 @@
+Git – solo source control
+Go into the folder you just created after the cloning.
+If you haven’t created a README at creation, create one now, if
+you did create it, just open it. Make some changes, and save the
+file.
+
+
+
+Run the command 
+    git status
+
+it will tell you that the file has been
+modified. If you created it, it will say it is not tracked.
+
+Run the command 
+    git add . 
+
+this will add all the files to current
+commit, and will track them.
+
+Run the command 
+    git commit –m “write something here” 
+
+this willcreate a set moment in time. At this moment, your repos are now
+out of sync. Your local is ahead.
+
+
+
+Because your local and remote repos are out of sync, if
+someone else were to clone the remote repo, we would be in
+trouble. Also, if our machine were to die, we would be in
+trouble.
+So the next step is to push the code back to the remote.
+
+Once we are happy with the commits, we just need to 
+run the command 
+    git push
+
+If this is the first time you run it, you will
+get prompt to update the remote, you can just copy and paste
+message to fix it.
+After pushing, the remote and local will be back in sync.

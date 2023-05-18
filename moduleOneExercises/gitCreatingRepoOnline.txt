@@ -1,0 +1,16 @@
+Git – Creating a repo online
+A repo, or a repository, is a synchronised version of your code.
+We call remote the one which is on GitHub, and we call local
+the one which is on your machine. We use GitHub to store our
+code, share it with the world, and also, to share it with our
+teams. We synchronise through pull and pushes. When we
+request code from the remote, we call it a pull. When instead,
+we upload code from our local machine, we call it a push.
+Expert users will know how to manage code straight from their
+machines, but for us, we will begin by creating the repository
+online.
+
+Navigate to https://github.com/new and create a repo. Give it
+a name, and follow the prompt to initialise it.
+One created, you will be able to clone the online repository
+locally.

@@ -1,0 +1,125 @@
+<!-- Debugging demystified
+
+Debugging is the art of finding bugs in your
+software, there are a number of ways to go around
+doing this, and every developer should know at
+least the basics.
+Writing good code comes from paying attention to
+the code itself. Errors happen because we have the
+logic wrong or we simply made a typo.
+Remember, computers are machines, they don’t act
+randomly.
+
+Types of debugging
+
+• Console debugging
+• IDE level debugging
+• Browser level debugging
+
+
+
+
+
+
+Browser Inspector
+
+If you are using Chrome, or Edge, or Safari, or
+Mozilla, you should have access to the inspector
+mode – or developer mode.
+You can use this to “inspect” the page. You can do
+
+this by pressing ctrl + shift + i or simply right-
+clicking on the browser anywhere, and clicking inspect.
+
+Exercise
+
+Learning to use the inspector
+window is vital to finding
+problems, and making
+corrections on the fly.
+Explore this window and find
+the tab “console”
+Everytime you use the
+console.log command,
+messages will be displayed
+here.
+Spend some time finding more
+information about the network
+tab and the Elements tab, try
+clicking on items on a page,
+they will be highlighted in the
+rendering window. Try to
+change the values! -->
+
+
+<!-- Debugging demystified
+
+The basic debugging can be done using console
+logs. There are various logging levels available such
+as
+console.debug( ) : outputs a message to the
+console with the log level debug
+console.info( ) : is used to output message which
+provide information, such as “server started”
+console.warn( ): used to display warnings
+console.error() : is used to output an error
+message. You may use string substitution and
+additional arguments with this method.
+These will help you find mistakes faster.
+
+
+Exercise
+Include the following in the
+script of an html page and run
+it in the live server -->
+
+<html>
+<head>
+<title>Hello World</title>
+</head>
+<body>
+
+<h1>Hello World!!!</h1>
+<script>
+console.log('this is a Message');
+console.info('this is info');
+console.warn('this is a warning');
+console.error('this is an error');
+</script>
+
+</body>
+</html> 
+
+
+<!-- Breakpoints
+
+When you reload, the renderer will
+stop at exactly that moment.
+Check the console, you can verify
+that it has not passed the breakpoint.
+Run it in the live server and open the
+inspector window.
+At the top, there is a little window,
+with two actions, Resume and Step
+Over. Resume will continue with no
+more stops. Step Over instead, will
+advance the code by one line. -->
+
+<!-- Breakpoints
+
+Using the code from the previous page, run it in live
+server and open the inspector window.
+Go to the tab “Sources”, here you will see a tree
+structure with your page as well.
+
+Scroll down the code to find the console.log section,
+click just left of the second call, it will bring up a red
+dot, this is a breakpoint.
+Reload the page! -->
+
+<!-- This technique is the most common
+way of debugging applications. On
+the right you have a column with all
+the machine state. Don’t worry, it is
+early for you to understand that part
+yet, we will get to it! -->

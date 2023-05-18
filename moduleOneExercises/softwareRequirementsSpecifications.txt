@@ -1,0 +1,139 @@
+Software Requirements Specifications (SRS)
+
+Agenda: Module 1 Part 8
+
+• Understanding SRS
+• Design Specifications
+• What Makes an SRS
+• Exercise
+
+
+
+
+
+
+Understanding SRS
+
+Before we build the software right,
+we need to build the right software.
+Every stakeholder will always look at
+the project from their perspective,
+so we need a way to deliver the
+project in a systematic way.
+
+Understanding SRS (continued)
+
+Business requirements drive the product vision which
+then define the project scope. Therefore we create an
+SRS document, Software requirements. You can find
+one good template here:
+https://exinfm.com/training/M2C3/srs_template.doc
+
+
+
+
+
+
+
+
+
+Design Specifications
+
+User Stories
+• A user story is a clear way to understand
+what the software is required to do.
+
+• Large applications are generally made up
+of many user stories, each story
+contributes to one key aspect.
+
+• Analysing a story reveals many
+requirements which may or may not have
+discovered in other stories before.
+
+            As a user, I want to be able to create my account
+            on Roots using either my social account (Facebook
+            or Google) or just my email, and make sure is
+            validated before I login for the first time.
+
+
+
+
+Design Specifications
+(continued)
+
+The Use Case
+• Once we know what is required to satisfy
+the user, we can now try to design the use
+case.
+
+• The simplest way is to follow the natural
+flow of things, from top to bottom,
+following what may call the “User
+journey”.
+
+• Do not skip steps, keep them separated,
+this way you can validate one by one.
+
+
+            Primary actor : User
+            Secondary Actor : Roots signup backend.
+            Description : every user is required to signup in
+            order to log into the system, the user is required to
+            create an account, which can be done either
+            through a sign-up form, or through a social
+            account.
+
+            Basic Flow :
+            1. User lands on home page.
+            2. User clicks on sign up button
+            3. User is redirected to sign up form.
+            4. User submit all the details for the signup.
+            5. The account is created on the Roots system.
+            6. An email is sent to the user to validate.
+            7. The user clicks on the link in the email and is
+            now able to log into Roots
+            Alternative Flow :
+            4. User clicks on FB or Google SignUp
+            5. Is redirected to Fb for validation
+            6. User can now log into Roots
+
+
+Design Specifications
+(continued)
+Back to the SRS document
+An SRS may be written by
+    • Procurer
+    ▪ Is a call for proposals
+    ▪ Must be general enough to yield a good selection of bids and
+    specific enough to exclude unreasonable ones.
+
+    • Bidders
+    ▪ Is a proposal to implement a system
+    ▪ Must be specific enough to demonstrate feasibility and
+    competence
+    • Developers
+    ▪ Reflects the developer’s understanding of the customer
+    needs
+    ▪ Forms the basis of evaluation of contractual performance.
+
+
+
+What Makes An SRS?
+    1. Introduction
+    • What is this software about? Purpose, audience, readings.
+    2. Overall Description
+    • What is the software supposed to do?
+    3. External interfaces.
+    • How does the software interact with people, the system's hardware, other hardware, and
+    other software?
+    • What assumptions can be made about these external entities?
+    4. System Features
+    • What are the key features of the software, e.g. login, user management?
+    5. Non-functional requirements
+    • What is the speed, availability, response time, recovery time of various software functions,
+    and so on?
+    • What are the portability, correctness, maintainability, security, and other considerations?
+    6. Other Requirements
+    • Are there any required standards in effect, implementation language, policies for database
+    integrity, resource limits, operating environment(s) and so on?
